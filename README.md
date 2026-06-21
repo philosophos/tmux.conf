@@ -16,19 +16,15 @@ Arch Linux:
 ###### install rainbarf    
 
     cd /tmp && git clone https://github.com/creaktive/rainbarf.git    
-    cd rainbarf-master/ && perl Build.PL    
-    ./Build test    
-    sudo ./Build install    
+    cd /tmp/rainbarf-master/ && perl Build.PL && ./Build test && sudo ./Build install    
 ###### install tmux-mem-cpu-load    
 
     cd /tmp && git clone https://github.com/thewtex/tmux-mem-cpu-load.git    
-    cd tmux-mem-cpu-load/ && cmake .    
-    make    
-    sudo make install    
+    cd tmux-mem-cpu-load/ && cmake . && make && sudo make install    
 ###### install the configuration    
 
     git clone https://github.com/philosophos/tmux.conf    
-copy .tmux.conf to your home dir    
+link .tmux.conf to your home dir    
     
     
 #### ShortKey Change:    
